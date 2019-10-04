@@ -7,6 +7,9 @@ $(function() {
     $("#search").click(function() {
         //Get the input from the search bar
         let pokemoneNameOrID = $("#pokemonInput").val().toLowerCase();
+
+        //Clear the input from the search bar
+        $("#pokemonInput").val("");
         
         //Remove old info from the Pokemon information list
         $("#pokemonInformationList").html("");
